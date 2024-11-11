@@ -1,0 +1,136 @@
+                                                                DAY-2 PROGRAMS
+1.Area of Triangle using Scanner
+import java.util.Scanner;
+public class AreaOfTriangle {
+   public static void main(String args[]){
+      int height, base, area;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the height of the triangle ::");
+      height = sc.nextInt();
+      System.out.println("Enter the base of the triangle ::");
+      base = sc.nextInt();
+      area = (height* base);
+      System.out.println("Area of the triangle is ::"+area);
+   }
+}
+
+ 2.Simple Interest using Scanner
+import java.util.Scanner;
+public class SimpleInterest {
+   public static void main (String args[]) {
+      // declaring principal, rate and time  
+      double principal, rate, time, simple_interest;
+      // Scanner to take input from user
+      Scanner my_scanner = new Scanner(System.in);
+      System.out.println("Enter a Principal amount : ");
+      // to take input of principle
+      principal = my_scanner.nextDouble();
+      System.out.println("Enter an Interest rate : ");
+      // to take input of rate
+      rate = my_scanner.nextDouble();
+      System.out.println("Enter a Time period in years : ");
+      // to take input of time
+      time = my_scanner.nextDouble();
+      // calculating interest
+      simple_interest = (principal * rate * time) / 100;
+      // to print the result
+      System.out.println("The Simple Interest is : " + simple_interest);
+      double totalSum = simple_interest + principal;
+      System.out.println("Your total sum after gaining interest : " + totalSum);
+   }
+}
+
+3.Swapping Two Numbers using Scanner
+import java.util.*;  
+class Swap_With {  
+    public static void main(String[] args) {  
+       int x, y, t;// x and y are to swap   
+       Scanner sc = new Scanner(System.in);  
+       System.out.println("Enter the value of X and Y");  
+       x = sc.nextInt();  
+       y = sc.nextInt();  
+       System.out.println("before swapping numbers: "+x +"  "+ y);  
+       /*swapping */  
+       t = x;  
+       x = y;  
+       y = t;  
+       System.out.println("After swapping: "+x +"   " + y);  
+       System.out.println( );  
+    }    
+}  
+Output:
+Enter the value of X and Y
+2
+3
+before swapping numbers: 2 3
+After swapping: 3 2
+
+4.Convert Fahrenheit to Celsius using Scanner
+import java.util.Scanner;
+public class Fahrenheit_Celsius 
+{
+    public static void main(String[] args) 
+    {
+        double celsius, fahrenheit;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter temperature in Fahrenheit:");
+        fahrenheit = s.nextDouble();
+        celsius = (fahrenheit-32)*(0.5556);
+        System.out.println("Temperature in Celsius:"+celsius);        
+    }
+}
+Output:
+
+$ javac Fahrenheit_Celsius.java
+$ java Fahrenheit_Celsius
+
+5.Find Quotient and Remainder using Scanner
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args) {
+    // Scanner class to take input
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the dividend: ");
+    
+    // Taking input of dividend
+    int dividend = scanner.nextInt();
+    System.out.print("Enter the divisor: ");
+    
+    // Taking input of divisor
+    int divisor = scanner.nextInt();
+
+    // calculating quotient
+    int quotient = dividend / divisor;
+    
+    // calculating remainder
+    int remainder = dividend % divisor;
+    System.out.println("Quotient = " + quotient);
+    System.out.println("Remainder = " + remainder);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
